@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layout onLaunch="launch" onVolumeUp="volume_up" onVolumeDown="volume_down" color="grey">
+	<tabs>
+		<tab text="Remote" id="remote" color="red">
+			<row>
+				<button icon="vdown" onTap="volume_down" />
+				<button icon="up" onTap="up" />
+				<button icon="vup" onTap="volume_up" />
+			</row>
+			<row>
+				<button icon="left" onTap="left" />
+				<button icon="select" onTap="enter" />
+				<button icon="right" onTap="right" />
+			</row>
+			<row>
+				<button icon="search" onTap="search" />
+				<button icon="down" onTap="down" />
+				<button icon="fullscreen" onTap="fullscreen" />
+			</row>
+			<row>
+				<button icon="back" onTap="back" />
+				<button icon="more" onTap="more" />
+				<button icon="docclose" onHold="exit" onTap="alert_exit" />
+			</row>
+		</tab>
+		<tab text="Runner" id="runner">
+			<row>
+				<button color="red" text="Youtube" onTap="open_youtube"/>
+			</row>
+			<row>
+				<button color="red" text="Netflix" onTap="open_netflix"/>
+			</row>
+			<row>
+				<button color="orange" text="Globosat" onTap="open_globosat_play"/>
+				<button color="orange" text="Globo" onTap="open_globo_play"/>
+			</row>
+			<row>
+				<button color="green" text="Premiere" onTap="open_premiere_tv"/>
+				<button color="green" text="SporTV" onTap="open_sportv_play"/>
+			</row>
+			<row>
+				<button color="blue" text="Kodi" onTap="open_kodi"/>
+			</row>
+		</tab>
+		<tab text="Power" id="power">
+			<row>
+				<button color="gray" text="Suspend" onTap="sleep"/>
+			</row>
+			<row>
+				<button color="green" text="Wake" onTap="@wol" />
+				<button color="red" text="Shutdown" onHold="shutdown" onTap="alert_shutdown"/>
+			</row>
+		</tab>
+	</tabs>
+</layout>
+
